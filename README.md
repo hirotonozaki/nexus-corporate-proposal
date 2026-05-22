@@ -1,467 +1,191 @@
-[index.html](https://github.com/user-attachments/files/28039371/index.html)
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
+[README.md](https://github.com/user-attachments/files/28130676/README.md)
+<div align="center">
 
-  <!-- SEO -->
-  <title>NEXUS Inc. | AI・Web開発・DX支援で未来を設計するIT企業</title>
-  <meta name="description" content="NEXUS Inc.はAI開発・Webサービス構築・DX支援を行うテクノロジーカンパニーです。最先端の技術と洗練されたデザインで、企業の未来を共に創造します。" />
-  <meta name="keywords" content="AI開発,Web制作,DX支援,IT企業,東京,システム開発,UI/UX" />
-  <meta name="author" content="NEXUS Inc." />
-  <meta name="robots" content="index, follow" />
+# NEXUS Inc. — Corporate Site
 
-  <!-- OGP -->
-  <meta property="og:title" content="NEXUS Inc. | AI・Web開発・DX支援で未来を設計するIT企業" />
-  <meta property="og:description" content="最先端のテクノロジーで、企業の未来を共に創造します。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hirotonozaki.github.io/nexus-portfolio-site/" />
-  <meta property="og:image" content="https://hirotonozaki.github.io/nexus-portfolio-site/assets/images/preview-mockup.png" />
-  <meta name="twitter:card" content="summary_large_image" />
+**Engineering the future, today.**
 
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://images.unsplash.com" />
+架空のAI・Web開発企業「NEXUS Inc.」のコーポレートサイト。
+デザイン設計からコーディング、デプロイまでを一人で制作したポートフォリオ作品です。
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<br />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0a'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='60' font-weight='800' fill='%234f8cff' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E" />
+![NEXUS Inc. Preview](./assets/images/preview-mockup.png)
 
-  <!-- Stylesheets（読み込み順: reset → style） -->
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+<br />
 
-  <!-- ========== Header ========== -->
-  <header class="header" id="header">
-    <div class="header__inner">
-      <a href="index.html" class="header__logo" aria-label="NEXUS Inc. ホームへ">
-        <span class="header__logo-mark">N</span>
-        <span class="header__logo-text">NEXUS</span>
-      </a>
+[**🌐 Live Site**](https://hirotonozaki.github.io/nexus-corporate/) ・ [**📄 Proposal**](https://hirotonozaki.github.io/nexus-corporate-proposal/) ・ [**📁 Repository**](https://github.com/hirotonozaki/nexus-corporate)
 
-      <!-- PCナビゲーション -->
-      <nav class="nav" aria-label="メインナビゲーション">
-        <ul class="nav__list">
-          <li><a href="index.html" class="nav__link is-active">HOME</a></li>
-          <li><a href="pages/service.html" class="nav__link">SERVICE</a></li>
-          <li><a href="pages/works.html" class="nav__link">WORKS</a></li>
-          <li><a href="pages/company.html" class="nav__link">COMPANY</a></li>
-          <li><a href="pages/recruit.html" class="nav__link">RECRUIT</a></li>
-          <li><a href="pages/blog.html" class="nav__link">BLOG</a></li>
-        </ul>
-      </nav>
+<br />
 
-      <a href="pages/contact.html" class="header__cta btn btn--primary">
-        <span>CONTACT</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat-square&logo=github&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-Mobile_First-4f8cff?style=flat-square)
 
-      <!-- ハンバーガーボタン -->
-      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="drawer">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </header>
+</div>
 
-  <!-- ========== ドロワー（モバイル用メニュー） ========== -->
-  <div class="drawer" id="drawer" aria-hidden="true">
-    <nav class="drawer__nav" aria-label="モバイルナビゲーション">
-      <ul class="drawer__list">
-        <li><a href="index.html" class="drawer__link"><span class="drawer__num">01</span>HOME</a></li>
-        <li><a href="pages/service.html" class="drawer__link"><span class="drawer__num">02</span>SERVICE</a></li>
-        <li><a href="pages/works.html" class="drawer__link"><span class="drawer__num">03</span>WORKS</a></li>
-        <li><a href="pages/company.html" class="drawer__link"><span class="drawer__num">04</span>COMPANY</a></li>
-        <li><a href="pages/recruit.html" class="drawer__link"><span class="drawer__num">05</span>RECRUIT</a></li>
-        <li><a href="pages/blog.html" class="drawer__link"><span class="drawer__num">06</span>BLOG</a></li>
-        <li><a href="pages/contact.html" class="drawer__link"><span class="drawer__num">07</span>CONTACT</a></li>
-      </ul>
-      <div class="drawer__info">
-        <p class="drawer__info-label">Get in touch</p>
-        <a href="mailto:info@nexus-example.com" class="drawer__info-mail">info@nexus-example.com</a>
-      </div>
-    </nav>
-  </div>
+<br />
 
-  <main>
+## 📖 Overview ／ 概要
 
-    <!-- ========== Hero ========== -->
-    <section class="hero" aria-label="ヒーローセクション">
-      <!-- 背景のグラデーション・パーティクル -->
-      <div class="hero__bg" aria-hidden="true">
-        <div class="hero__gradient hero__gradient--1"></div>
-        <div class="hero__gradient hero__gradient--2"></div>
-        <div class="hero__grid"></div>
-      </div>
+AI開発・Web開発・DX コンサルティングを手がける架空のテクノロジー企業を想定し、ダークモードを基調としたコーポレートサイトを制作しました。BtoB 企業のサイトに必要な情報量・遷移設計・デザインのまとまりを意識しながら、デザイン・情報設計・コーディングまで一貫して取り組んでいます。
 
-      <div class="hero__inner container">
-        <p class="hero__tagline" data-animate="fade-up">
-          <span class="hero__tagline-dot"></span>
-          AI × Web × DX — Designing the next era
-        </p>
+| Item | Detail |
+| :--- | :--- |
+| **Project Type** | コーポレートサイト（架空クライアント） |
+| **Pages** | 7ページ（Home / Service / Works / Company / Recruit / Blog / Contact） |
+| **Role** | 企画 / UI 設計 / デザイン / コーディング |
+| **Period** | 約2週間 |
+| **Stack** | HTML5 / CSS3 / Vanilla JavaScript |
+| **Hosting** | GitHub Pages |
 
-        <h1 class="hero__title">
-          <span class="hero__title-line" data-animate="fade-up" data-delay="100">Engineering</span>
-          <span class="hero__title-line" data-animate="fade-up" data-delay="200">the <em>future</em>,</span>
-          <span class="hero__title-line" data-animate="fade-up" data-delay="300">today.</span>
-        </h1>
+<br />
 
-        <p class="hero__lead" data-animate="fade-up" data-delay="500">
-          私たちNEXUSは、AI・Web開発・DX支援を通じて、<br />
-          企業のビジネスを次のステージへと導くテクノロジーパートナーです。
-        </p>
+## 🌐 Live Site ／ サイトURL
 
-        <div class="hero__actions" data-animate="fade-up" data-delay="700">
-          <a href="pages/service.html" class="btn btn--primary btn--lg">
-            <span>サービスを見る</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a href="pages/contact.html" class="btn btn--ghost btn--lg">
-            <span>お問い合わせ</span>
-          </a>
-        </div>
+https://hirotonozaki.github.io/nexus-corporate/
 
-        <!-- スクロールインジケーター -->
-        <div class="hero__scroll" aria-hidden="true">
-          <span class="hero__scroll-text">SCROLL</span>
-          <span class="hero__scroll-line"></span>
-        </div>
-      </div>
-    </section>
+<br />
 
-    <!-- ========== About (ミッション) ========== -->
-    <section class="about section" aria-labelledby="about-title">
-      <div class="container">
-        <div class="section-head" data-animate="fade-up">
-          <span class="section-head__label">01 — About us</span>
-          <h2 class="section-head__title" id="about-title">
-            技術と創造性で、<br />
-            ビジネスの<em>可能性</em>を解き放つ。
-          </h2>
-        </div>
+## 💻 GitHub ／ リポジトリ
 
-        <div class="about__grid">
-          <div class="about__text" data-animate="fade-up">
-            <p>
-              NEXUSは、最先端のAI技術とモダンなWeb開発を融合し、企業の課題を本質から解決するテクノロジーカンパニーです。
-            </p>
-            <p>
-              戦略立案からデザイン、開発、運用までを一気通貫で提供。スピードと品質を両立させた「未来志向のものづくり」で、200社以上のビジネス成長に貢献してきました。
-            </p>
-          </div>
-          <div class="about__stats" data-animate="fade-up" data-delay="200">
-            <div class="stat glass">
-              <span class="stat__num" data-count="200">0</span><span class="stat__suffix">+</span>
-              <span class="stat__label">Projects delivered</span>
-            </div>
-            <div class="stat glass">
-              <span class="stat__num" data-count="98">0</span><span class="stat__suffix">%</span>
-              <span class="stat__label">Client satisfaction</span>
-            </div>
-            <div class="stat glass">
-              <span class="stat__num" data-count="50">0</span><span class="stat__suffix">+</span>
-              <span class="stat__label">Engineers & designers</span>
-            </div>
-            <div class="stat glass">
-              <span class="stat__num" data-count="12">0</span><span class="stat__suffix">y</span>
-              <span class="stat__label">Years of experience</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+https://github.com/hirotonozaki/nexus-corporate
 
-    <!-- ========== Service ========== -->
-    <section class="service section" aria-labelledby="service-title">
-      <div class="container">
-        <div class="section-head" data-animate="fade-up">
-          <span class="section-head__label">02 — Service</span>
-          <h2 class="section-head__title" id="service-title">
-            事業領域
-          </h2>
-          <p class="section-head__desc">
-            私たちは3つの柱で、お客様のビジネスを支援します。
-          </p>
-        </div>
+<br />
 
-        <div class="service__grid">
-          <!-- Card 1 -->
-          <article class="service-card glass" data-animate="fade-up">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <span class="service-card__num">01</span>
-            <h3 class="service-card__title">AI Development</h3>
-            <p class="service-card__desc">
-              生成AI・機械学習を活用した業務自動化、チャットボット、データ分析基盤の構築まで。最新のLLM技術でビジネスを変革します。
-            </p>
-            <ul class="service-card__tags">
-              <li>LLM / RAG</li>
-              <li>Machine Learning</li>
-              <li>AI Agent</li>
-            </ul>
-            <a href="pages/service.html" class="service-card__link">
-              詳しく見る
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </article>
+## 🛠 Tech Stack ／ 使用技術
 
-          <!-- Card 2 -->
-          <article class="service-card glass" data-animate="fade-up" data-delay="150">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-                <path d="M21 7H3v10h18V7zM3 7l9 6 9-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <span class="service-card__num">02</span>
-            <h3 class="service-card__title">Web Development</h3>
-            <p class="service-card__desc">
-              企業サイト・LP・SaaS開発まで。UI/UXデザインとモダンな技術スタックで、成果の出るWebプロダクトを構築します。
-            </p>
-            <ul class="service-card__tags">
-              <li>Next.js / React</li>
-              <li>UI/UX Design</li>
-              <li>Headless CMS</li>
-            </ul>
-            <a href="pages/service.html" class="service-card__link">
-              詳しく見る
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </article>
+| 領域 | 技術 |
+| :--- | :--- |
+| **Markup** | HTML5（セマンティックタグ、SEO・アクセシビリティ配慮） |
+| **Styling** | CSS3 / CSS Variables（`clamp()`、CSS Grid / Flexbox） |
+| **Interaction** | Vanilla JavaScript（IntersectionObserver、`requestAnimationFrame`） |
+| **Typography** | Space Grotesk / Inter / Noto Sans JP（Google Fonts） |
+| **Hosting** | GitHub Pages |
 
-          <!-- Card 3 -->
-          <article class="service-card glass" data-animate="fade-up" data-delay="300">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
-                <path d="M3 3v18h18M7 14l4-4 4 4 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <span class="service-card__num">03</span>
-            <h3 class="service-card__title">DX Consulting</h3>
-            <p class="service-card__desc">
-              業務分析からシステム導入、組織変革まで。経営課題に寄り添い、テクノロジーで持続可能な成長基盤を作ります。
-            </p>
-            <ul class="service-card__tags">
-              <li>業務改革</li>
-              <li>システム導入</li>
-              <li>データ活用</li>
-            </ul>
-            <a href="pages/service.html" class="service-card__link">
-              詳しく見る
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
+> フレームワークを使えば早いことは理解した上で、今回は **「素の Web 技術でどこまで作れるか」を学ぶこと** を優先しました。
 
-    <!-- ========== Works ========== -->
-    <section class="works section" aria-labelledby="works-title">
-      <div class="container">
-        <div class="section-head section-head--row" data-animate="fade-up">
-          <div>
-            <span class="section-head__label">03 — Works</span>
-            <h2 class="section-head__title" id="works-title">制作実績</h2>
-          </div>
-          <a href="pages/works.html" class="btn btn--ghost">View all works</a>
-        </div>
+<br />
 
-        <div class="works__grid">
-          <a href="pages/works.html" class="work-card" data-animate="fade-up">
-            <div class="work-card__img">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" width="800" height="600" alt="ダッシュボード画面のサンプル" loading="lazy" />
-            </div>
-            <div class="work-card__body">
-              <span class="work-card__tag">AI / SaaS</span>
-              <h3 class="work-card__title">AIアナリティクスダッシュボード</h3>
-              <p class="work-card__desc">大手金融機関向けの分析プラットフォーム開発</p>
-            </div>
-          </a>
+## 💡 Concept ／ 制作意図
 
-          <a href="pages/works.html" class="work-card" data-animate="fade-up" data-delay="150">
-            <div class="work-card__img">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" width="800" height="600" alt="コーポレートサイトのサンプル" loading="lazy" />
-            </div>
-            <div class="work-card__body">
-              <span class="work-card__tag">Corporate</span>
-              <h3 class="work-card__title">グローバル企業ブランドサイト</h3>
-              <p class="work-card__desc">多言語対応・大規模CMS導入プロジェクト</p>
-            </div>
-          </a>
+> **「Engineering the future, today.」** — 落ち着いた未来感
 
-          <a href="pages/works.html" class="work-card" data-animate="fade-up" data-delay="300">
-            <div class="work-card__img">
-              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" width="800" height="600" alt="ECサイトのサンプル" loading="lazy" />
-            </div>
-            <div class="work-card__body">
-              <span class="work-card__tag">EC / DX</span>
-              <h3 class="work-card__title">D2Cブランド向けECプラットフォーム</h3>
-              <p class="work-card__desc">UI/UX設計からシステム開発まで一気通貫で支援</p>
-            </div>
-          </a>
+ポートフォリオを制作するにあたり、「テンプレ感のあるLP」ではなく、**実在企業に近い情報量・遷移設計・デザインのトーン**を再現することを目標としました。採用担当の方に、
 
-          <a href="pages/works.html" class="work-card" data-animate="fade-up" data-delay="450">
-            <div class="work-card__img">
-              <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=800&q=80" width="800" height="600" alt="モバイルアプリのサンプル" loading="lazy" />
-            </div>
-            <div class="work-card__body">
-              <span class="work-card__tag">Mobile App</span>
-              <h3 class="work-card__title">ヘルスケアモバイルアプリ</h3>
-              <p class="work-card__desc">AIによる健康データ分析とパーソナライゼーション</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
+- どの程度の規模のサイトを設計できるか
+- どこまで UI/UX を考えてコーディングできるか
+- フレームワークに頼らず素の Web 技術を扱えるか
 
-    <!-- ========== News / Blog ========== -->
-    <section class="news section" aria-labelledby="news-title">
-      <div class="container">
-        <div class="section-head section-head--row" data-animate="fade-up">
-          <div>
-            <span class="section-head__label">04 — News</span>
-            <h2 class="section-head__title" id="news-title">お知らせ / Blog</h2>
-          </div>
-          <a href="pages/blog.html" class="btn btn--ghost">View all posts</a>
-        </div>
+を伝えられる成果物を目指しています。
 
-        <ul class="news__list">
-          <li class="news__item" data-animate="fade-up">
-            <a href="pages/blog.html" class="news__link">
-              <time class="news__date" datetime="2026-05-01">2026.05.01</time>
-              <span class="news__tag">PRESS</span>
-              <p class="news__title">シリーズB資金調達のお知らせ。AI開発分野への投資を加速します。</p>
-              <span class="news__arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="news__item" data-animate="fade-up" data-delay="100">
-            <a href="pages/blog.html" class="news__link">
-              <time class="news__date" datetime="2026-04-18">2026.04.18</time>
-              <span class="news__tag">TECH</span>
-              <p class="news__title">生成AIを活用した業務効率化の最新事例について解説しました。</p>
-              <span class="news__arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-          <li class="news__item" data-animate="fade-up" data-delay="200">
-            <a href="pages/blog.html" class="news__link">
-              <time class="news__date" datetime="2026-04-02">2026.04.02</time>
-              <span class="news__tag">EVENT</span>
-              <p class="news__title">Tech Conference 2026に登壇します。最新のAI活用事例を共有予定です。</p>
-              <span class="news__arrow" aria-hidden="true">→</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+| 領域 | 方針 |
+| :--- | :--- |
+| **Tone** | Dark / Premium / Tech |
+| **Color** | Blue `#4f8cff` × Purple `#a06bff`（グラデーション） |
+| **Background** | `#0a0a0a` ベースのダークモード |
+| **Typography** | Space Grotesk × Inter × Noto Sans JP |
+| **Motion** | 過度な動きは抑え、スクロール連動のフェードのみ採用 |
 
-    <!-- ========== CTA ========== -->
-    <section class="cta section" aria-labelledby="cta-title">
-      <div class="container">
-        <div class="cta__inner glass" data-animate="fade-up">
-          <div class="cta__bg" aria-hidden="true"></div>
-          <span class="section-head__label">Contact us</span>
-          <h2 class="cta__title" id="cta-title">
-            未来を、<br class="sp-only" />一緒に作りませんか。
-          </h2>
-          <p class="cta__desc">
-            プロジェクトのご相談、お見積もり、採用に関するお問い合わせまで、<br />
-            お気軽にご連絡ください。
-          </p>
-          <div class="cta__actions">
-            <a href="pages/contact.html" class="btn btn--primary btn--lg">
-              <span>お問い合わせ</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <a href="pages/recruit.html" class="btn btn--ghost btn--lg">
-              <span>採用情報を見る</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+派手なアニメーションで魅せるのではなく、**情報の読みやすさ**と**落ち着いたトーン**を優先しました。BtoB 企業のコーポレートサイトという想定を踏まえ、信頼感が伝わる配色・余白設計を心がけています。
 
-  </main>
+<br />
 
-  <!-- ========== Footer ========== -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <a href="index.html" class="footer__logo">
-            <span class="header__logo-mark">N</span>
-            <span class="header__logo-text">NEXUS</span>
-          </a>
-          <p class="footer__tagline">Engineering the future, today.</p>
-        </div>
+## ✨ Highlights ／ 工夫した点
 
-        <nav class="footer__nav" aria-label="フッターナビゲーション">
-          <div class="footer__col">
-            <h4 class="footer__heading">Service</h4>
-            <ul>
-              <li><a href="pages/service.html">AI Development</a></li>
-              <li><a href="pages/service.html">Web Development</a></li>
-              <li><a href="pages/service.html">DX Consulting</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h4 class="footer__heading">Company</h4>
-            <ul>
-              <li><a href="pages/company.html">About</a></li>
-              <li><a href="pages/works.html">Works</a></li>
-              <li><a href="pages/blog.html">Blog</a></li>
-              <li><a href="pages/recruit.html">Recruit</a></li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h4 class="footer__heading">Contact</h4>
-            <ul>
-              <li><a href="pages/contact.html">Contact us</a></li>
-              <li><a href="mailto:info@nexus-example.com">info@nexus-example.com</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+### 1. デザイントークンによるスタイル統一
+CSS カスタムプロパティで `--color-*` `--font-*` `--radius-*` `--transition` などを一元管理。全7ページで色・余白・モーションのトーンが揃うように設計しました。
 
-      <div class="footer__bottom">
-        <p class="footer__copy">© 2026 NEXUS Inc. All rights reserved.</p>
-        <ul class="footer__legal">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+### 2. BEM 命名 + 3層構造の CSS 設計
+`reset.css` → `style.css`（共通・トップ専用） → `pages.css`（下層共通）の読み込み順を整理し、クラス命名は BEM (`block__element--modifier`) に統一。保守性と可読性を意識しています。
 
-  <!-- ページトップに戻るボタン -->
-  <button class="page-top" id="pageTop" aria-label="ページトップへ戻る">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </button>
+### 3. Vanilla JS によるインタラクション
+ライブラリに依存せず、`IntersectionObserver` によるスクロールフェードイン、`requestAnimationFrame` を使ったカウントアップ、ヘッダースクロール連動、ハンバーガー / ドロワーまでを素の JavaScript で実装しました。
 
-  <!-- JavaScript -->
-  <script src="js/main.js" defer></script>
-</body>
-</html>
+### 4. アクセシビリティへの配慮
+`aria-label` / `aria-expanded` / `aria-hidden` を適切に付与。`:focus-visible` でキーボード操作時のみフォーカスリングを表示し、`prefers-reduced-motion` にも対応しています。
+
+### 5. JP × EN のタイポグラフィ
+英語見出しに `Space Grotesk` / `Inter`、日本語本文に `Noto Sans JP` を組み合わせ、コーポレートサイトに馴染むトーンを目指しました。
+
+<br />
+
+## 📂 Directory ／ ディレクトリ構成
+
+```
+nexus-corporate/
+├── index.html                 # トップページ
+├── README.md
+├── css/
+│   ├── reset.css              # モダン CSS リセット
+│   ├── style.css              # デザイントークン + 共通 + トップ
+│   └── pages.css              # 下層ページ共通
+├── js/
+│   └── main.js                # スクロール連動 / ドロワー / IntersectionObserver
+├── pages/
+│   ├── service.html           # 事業領域
+│   ├── works.html             # 制作実績
+│   ├── company.html           # 会社情報
+│   ├── recruit.html           # 採用情報
+│   ├── blog.html              # お知らせ
+│   └── contact.html           # お問い合わせ
+└── assets/
+    └── images/
+        ├── preview-mockup.png # README ヒーロー画像
+        └── qr-code.png        # スマホアクセス用 QR
+```
+
+<br />
+
+## 🖼 Screenshot ／ スクリーンショット
+
+![NEXUS Inc. Preview](./assets/images/preview-mockup.png)
+
+<br />
+
+## 📱 Responsive ／ レスポンシブ対応
+
+モバイルファーストで設計し、以下のブレイクポイントで動作を確認しています。
+
+| Device | Width | 主な変化 |
+| :--- | :--- | :--- |
+| 📱 Mobile | ~ 767px | ハンバーガー + ドロワー / 1カラム / フォントサイズ調整 |
+| 📱 Tablet | 768 ~ 1023px | 2カラム / ナビ表示切替 |
+| 💻 Desktop | 1024px ~ | フル表示 / グローバルナビ / 3カラムグリッド |
+
+`clamp()` 関数で見出し・余白を可変にし、ブレイクポイント間でも自然に変化するよう調整しました。
+
+<br />
+
+## 📄 Proposal ／ 企画書
+
+本サイトの戦略・情報設計・デザイン意図・スケジュール・概算見積もりまでをまとめた、全11ページ構成の企画書を公開しています。
+
+🔗 https://hirotonozaki.github.io/nexus-corporate-proposal/
+
+<br />
+
+## 👤 Author ／ 制作者情報
+
+<div align="center">
+
+### **Hiroto Nozaki**
+
+Web Production / Front-end
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hirotonozaki)
+[![Portfolio](https://img.shields.io/badge/Portfolio-4f8cff?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hirotonozaki.github.io/hiroto-nozaki-portfolio/)
+
+</div>
+
+<br />
+
+<div align="center">
+
+> 本サイトはポートフォリオ用に制作した架空企業のデモであり、実在する組織・事業とは関係ありません。
+
+<sub>© 2026 Hiroto Nozaki</sub>
+
+</div>
