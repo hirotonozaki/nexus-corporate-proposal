@@ -1,6 +1,6 @@
 <div align="center">
 
-# NEXUS Inc. — Web Renewal Proposal (v2)
+# NEXUS Inc. — Web Renewal Proposal
 
 **Engineering the future, today.**
 
